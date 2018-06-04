@@ -20,6 +20,10 @@ li {
     list-style-type: none; 
 }
 
+nav ul li.selected {
+    background: #cccccc;
+}
+
 
 #logo {
     width: 200px;
@@ -42,16 +46,35 @@ img {
 }
 
 #userName {
-    left: 1398px;
-    top: 30px;
-    position: relative;
-    font-size: 27px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #555555;
+    position: relative;
+    float: right;
+    right: 70px;
+    top: 45px;
 }
 
 main .messeges {
     margin-top: 72px;
+}
+
+#bill {
+    width: 720px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9{
+    width: 82px;
+    height: 82px;
+    border-radius:8px;
+    margin: 80px 75.5px;
+    border: 3px solid #6b6b6b;
+    text-align: center;
+    position: relative;
+    float: left;
+    font-size: 50px;
+    color: #6b6b6b;
 }
 
 /* DESKTOP */
@@ -79,11 +102,17 @@ main .messeges {
         float: right;
     }
 
-    .messeges {
-        min-height: 88px;
-        height: auto;
-        width: 480px;
+    nav ul section {
+        background: #cccccc;
+        border: 2px solid #cccccc;
+        height: 5px;
+        border-radius: 8px;
+        left: 2px;
+        width: 915px;
+        top: 70px;
+        position: relative;
     }
+
 
     h5 {
         color: #555555;
@@ -99,22 +128,30 @@ main .messeges {
         border: 3px solid #cccccc;
         border-radius: 8px;
         min-height: 90px;
-        height: auto;
-        width: 477px;
-        font-size: 38px;
+        font-size: 25px;
         text-align: center;
         position: relative;
-        left:290px;
-        margin: 50px;
+        margin: 50px 335px;
         background: #ebebeb;
         color: #555555;
     }
 
+    article section {
+        margin-top: 30px;
+    }
 
-}    
+    article section.lonemes {
+        margin-top: 1px;
+
+    }
+
+    article div {
+        font-size: 18px;
+        position: absolute;  
+    }    
 
 
-/* MOBILE */
+/* TABLET */
 @media (max-width: 850px) and (min-width: 591px) {
 
 }
