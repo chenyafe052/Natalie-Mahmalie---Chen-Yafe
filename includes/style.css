@@ -13,18 +13,13 @@ header, nav, aside, article, section, footer, main {
 
 #wrapper {
     margin: 0px auto;
-    width: 1600px;
+    width: 1000px;
 }
 
 li {
     list-style-type: none; 
 }
 
-h2 {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 38px;
-}
 
 #logo {
     width: 200px;
@@ -55,7 +50,6 @@ img {
     color: #555555;
 }
 
-
 main .messeges {
     margin-top: 72px;
 }
@@ -67,11 +61,21 @@ main .messeges {
         height: 104px;
     }
 
+    nav {
+        width: 950px;
+        height: 90px;
+        left: 25px;
+        position: relative;
+    }
+
     li {
-        height: 145px;
-        width: 295px;
-        border: 3px solid #cccccc;
+        height: 74px;
+        width: 180px;
+        border: 2px solid #cccccc;
         border-radius: 8px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 38px;
         float: right;
     }
 
@@ -81,13 +85,14 @@ main .messeges {
         width: 480px;
     }
 
-    h2 {
-        margin-top: 45px;
+    h5 {
         color: #555555;
-
+        margin-top: 20px; 
+        font-size: 20px;
     }
-     h2.long {
-         margin-top:30px;
+
+     h5.long {
+         margin-top:12px;
      }
 
      article {
@@ -99,11 +104,12 @@ main .messeges {
         font-size: 38px;
         text-align: center;
         position: relative;
-        left:558px;
+        left:290px;
         margin: 50px;
         background: #ebebeb;
         color: #555555;
     }
+
 
 }    
 
