@@ -77,6 +77,8 @@ main .messeges {
     color: #6b6b6b;
 }
 
+
+
 /* DESKTOP */
 @media (min-width: 851px) {
     header {
@@ -124,29 +126,30 @@ main .messeges {
          margin-top:12px;
      }
 
+
      article {
         border: 3px solid #cccccc;
         border-radius: 8px;
         min-height: 90px;
-        font-size: 25px;
+        font-size: 22px;
         text-align: center;
         position: relative;
         margin: 50px 335px;
         background: #ebebeb;
         color: #555555;
+        /* box-shadow: 5px 5px #bbbbbb; */
     }
 
     article section {
         margin-top: 30px;
     }
 
-    article section.lonemes {
-        margin-top: 1px;
+    article section.longmes {
+        margin-top: 18px;
 
     }
 
     article div {
-        font-size: 18px;
         position: absolute;  
     }    
 
