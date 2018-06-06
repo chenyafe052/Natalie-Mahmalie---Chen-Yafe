@@ -34,11 +34,13 @@
                         <textarea id="message" type="text" name="messege" placeholder="תוכן ההודעה"></textarea>
                         <input type="number" name="amount" placeholder="סכום ששולם">
                         <input type="date" name="date" placeholder="תאריך ביצוע התשלום">
-                        <select name="pay" placeholder="אופן ההתחשבנות">
-                            <label><option value="1" selected>אופן התחשבנות</option></label>
-                            <label>העברת כסף BIT<option value="2">העברת כסף BIT</option></label>
-                            <label>העברת כסף PEPPER-PAY<option value="3">העברת כסף PEEPER PAY</option></label>
+                        <label>:אופן ההתחשבנות
+                            <select name="pay" placeholder="אופן ההתחשבנות">
+                            <option name="pay">מזומן</option>
+                            <option name="pay">העברת כסף BIT</option>
+                            <option name="pay">העברת כסף PEEPER PAY</option>
                         </select> 
+                        </label>
                         <button>Send Message</button>  
                 </form>
             </main>

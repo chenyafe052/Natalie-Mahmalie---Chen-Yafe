@@ -6,12 +6,12 @@
     text-decoration: none;
 }
 
-a:visited {
-    Color: #555555;
-    }
+a, a:visited, label {
+    color:#555555;
+}
 
 a:hover {
-    color: #555555;
+    color: #2b879e;
 }
 
 header, nav, aside, article, section, footer, main {
