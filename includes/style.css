@@ -1,13 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-
-
 * {    
     margin: 0px; padding: 0px;
     text-decoration: none;
 }
 
+a:visited {
+    Color: #555555;
+    }
 
 a:hover {
     color: #555555;
@@ -59,9 +60,11 @@ img {
 }
 
 
-/* /////////////////////
+
+
+/*/////////////////////
 ////// DESKTOP ///////
-///////////////////// */
+////////////////////*/
 
 @media (min-width: 850px) {
         
@@ -71,37 +74,27 @@ img {
     }
 
     header {
-        width: auto;
+        max-width: 1000px;
         height: 104px;
     }
 
     nav {
-        width: 950px;
+        width: 92%;
         height: 90px;
         left: 25px;
         position: relative;
     }
 
     li {
+        width: 18%;
         height: 74px;
-        width: 180px;
         border: 2px solid #cccccc;
         border-radius: 8px;
         text-align: center;
         font-family: 'Varela Round', sans-serif;
         font-size: 38px;
         float: right;
-    }
-
-    nav ul section {
-        background: #cccccc;
-        border: 2px solid #cccccc;
-        height: 5px;
-        border-radius: 8px;
-        left: 2px;
-        width: 915px;
-        top: 70px;
-        position: relative;
+        border-bottom-width: thick;        
     }
 
     h5 {
@@ -115,7 +108,7 @@ img {
      }
 
      .messeges article {
-        border: 3px solid #cccccc;
+        border: 2px solid #cccccc;
         border-radius: 8px;
         min-height: 90px;
         font-size: 22px;
@@ -124,7 +117,6 @@ img {
         margin: 50px 335px;
         background: #ebebeb;
         color: #555555;
-        /* box-shadow: 5px 5px #bbbbbb; */
     }
 
     .messeges article section {
@@ -174,7 +166,7 @@ img {
     }
 
     .electricity article {
-        border: 3px solid #cccccc;
+        border: 2px solid #cccccc;
         border-radius: 8px;
         min-height: 60px;
         font-size: 18px;
@@ -197,14 +189,79 @@ img {
     
     main .electricity {
         margin-top: 72px;
-    
     }
 
+    form { 
+        width:500px;
+        height:440px;
+        background:#e6e6e6;
+        border-radius:8px;
+        box-shadow:0 0 40px -10px #000;
+        margin:calc(50vh - 220px) auto;
+        padding:20px 30px;
+        max-width:calc(100vw - 40px);
+        box-sizing:border-box;
+        font-family: 'Varela Round', sans-serif;
+        position:relative;
+        text-align: center;
+    }
+
+    h2 {
+        margin:0 auto;
+        padding-bottom:10px;
+        width:180px;
+        color:#78788c;
+        border-bottom:3px solid #78788c;
+        text-align: center;
+    }
+
+    input, textarea, select {
+        width:100%;
+        padding:10px;
+        box-sizing:border-box;
+        background:none;
+        outline:none;
+        border:0;
+        font-family: 'Varela Round', sans-serif;
+        transition:all .3s;
+        border-bottom:2px solid #bebed2;
+        text-align: right;
+    }
+
+    input:focus {
+        border-bottom:2px solid #78788c;
+    }
+
+    p:before {
+        content:attr(type);
+        display:block;
+        margin:28px 0 0;
+        font-size:14px;
+        color:#5a5a5a;
+    }
+
+    button {
+        padding:8px 12px;
+        margin: 30px auto;
+        font-family: 'Varela Round', sans-serif;
+        border:2px solid #78788c;
+        background:0;
+        color:#5a5a6e;
+        cursor:pointer;
+        transition:all .3s;
+    }
+
+    button:hover {
+        background:#78788c;color:#ffffff;
+    }
+    
 }
 
-/* /////////////////////
-////// TABLET ///////
-///////////////////// */
+
+/*//////////////////////
+//////  TABLET  ////////
+/////////////////////*/
+
 @media (max-width: 850px) and (min-width: 481px) {
 
     #wrapper {
@@ -213,38 +270,27 @@ img {
     }
 
     header {
-        width: auto;
+        max-width: 850px;
         height: 104px;
     }
 
     nav {
-        width: 685px;
+        width: 92%;
         height: 80px;
         left: 25px;
         position: relative;
     }
 
     li {
+        width: 18%;
         height: 64px;
-        width: 131px;
         border: 2px solid #cccccc;
         border-radius: 8px;
         text-align: center;
         font-family: 'Varela Round', sans-serif;
         font-size: 38px;
         float: right;
-    }
-
-
-    nav ul section {
-        background: #cccccc;
-        border: 2px solid #cccccc;
-        height: 5px;
-        border-radius: 8px;
-        left: 6px;
-        top: 60px;
-        width: 671px;
-        position: relative;
+        border-bottom-width: thick;
     }
 
     h5 {
@@ -258,7 +304,7 @@ img {
      }
 
      .messeges article {
-        border: 3px solid #cccccc;
+        border: 2px solid #cccccc;
         border-radius: 8px;
         min-height: 90px;
         font-size: 18px;
@@ -267,7 +313,6 @@ img {
         margin: 25px 260px;
         background: #ebebeb;
         color: #555555;
-        /* box-shadow: 5px 5px #bbbbbb; */
     }
 
     .messeges article section {
@@ -283,6 +328,11 @@ img {
     .messeges article div {
         position: absolute;  
     }    
+
+    main .electricity {
+        margin-top: 72px;
+    }
+
 
     .bill{
         width: 720px;
@@ -308,12 +358,12 @@ img {
     }
 
      .bill section{
-     font-size:16px;
-     position: relative; 
+        font-size:16px;
+        position: relative; 
     }
 
     .electricity article {
-        border: 3px solid #cccccc;
+        border: 2px solid #cccccc;
         border-radius: 8px;
         min-height: 60px;
         font-size: 18px;
@@ -334,4 +384,70 @@ img {
         position: absolute;  
     }
 
+    
+    form { 
+        width:500px;
+        height:440px;
+        background:#e6e6e6;
+        border-radius:8px;
+        box-shadow:0 0 40px -10px #000;
+        margin:calc(50vh - 220px) auto;
+        padding:20px 30px;
+        max-width:calc(100vw - 40px);
+        box-sizing:border-box;
+        font-family: 'Varela Round', sans-serif;
+        position:relative;
+        text-align: center;
+    }
+
+    h2 {
+        margin:0 auto;
+        padding-bottom:10px;
+        width:180px;
+        color:#78788c;
+        border-bottom:3px solid #78788c;
+        text-align: center;
+    }
+
+    input, textarea, select {
+        width:100%;
+        padding:10px;
+        box-sizing:border-box;
+        background:none;
+        outline:none;
+        border:0;
+        font-family: 'Varela Round', sans-serif;
+        transition:all .3s;
+        border-bottom:2px solid #bebed2;
+        text-align: right;
+    }
+
+    input:focus {
+        border-bottom:2px solid #78788c;
+    }
+
+    p:before {
+        content:attr(type);
+        display:block;
+        margin:28px 0 0;
+        font-size:14px;
+        color:#5a5a5a;
+    }
+
+    button {
+        float:right;
+        padding:8px 12px;
+        margin: 8px auto;
+        font-family: 'Varela Round', sans-serif;
+        border:2px solid #78788c;
+        background:0;
+        color:#5a5a6e;
+        cursor:pointer;
+        transition:all .3s;
+    }
+
+    button:hover {
+        background:#78788c;
+        color:#ffffff;
+    }
 }
