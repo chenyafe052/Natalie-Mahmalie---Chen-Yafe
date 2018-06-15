@@ -8,6 +8,11 @@
 
 a, a:visited, label {
     color:#555555;
+    font-size: 15px;
+}
+
+#bills .bill i {
+    font-size: 25px;
 }
 
 a:hover {
@@ -81,7 +86,6 @@ img {
     nav {
         width: 92%;
         height: 90px;
-        left: 25px;
         position: relative;
     }
 
@@ -97,53 +101,41 @@ img {
         border-bottom-width: thick;        
     }
 
-    h5 {
-        color: #555555;
-        margin-top: 20px; 
-        font-size: 18px;
-    }
-
-     h5.long {
-         margin-top:12px;
-     }
-
-     .messeges article {
+    #homePage article {
         border: 2px solid #cccccc;
         border-radius: 8px;
         min-height: 90px;
-        font-size: 22px;
         text-align: center;
-        position: relative;
         margin: 50px 335px;
         background: #ebebeb;
         color: #555555;
     }
 
-    .messeges article section {
+    #homePage article section {
         margin-top: 30px;
         font-family: 'Varela Round', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    .messeges article section.longmes {
+    #homePage article section.longmes {
         margin-top: 18px;
     }
 
-    .messeges article div {
+    #homePage article div {
         position: absolute;  
     }    
 
-    main .messeges {
+    #homePage main {
         margin-top: 72px;
     }
 
-    .bill{
+    #bills .bill{
         width: 720px;
         height: auto;
         margin: 0 auto;
     }
     
-    .bill article{
+    #bills .bill article{
         background: #ebebeb;
         width: 84px;
         height: 79px;
@@ -160,12 +152,12 @@ img {
         padding-top: 5px;
     }
 
-     .bill section{
+    #bills .bill section{
         font-size:16px;
         position: relative; 
     }
 
-    .electricity article {
+    #electricity article {
         border: 2px solid #cccccc;
         border-radius: 8px;
         min-height: 60px;
@@ -177,21 +169,21 @@ img {
         color: #555555;
     }
     
-    .electricity article section {
+    #electricity article section {
         margin-top: 15px;
         font-family: 'Varela Round', sans-serif;
         font-size: 18px;
     }
     
-    .electricity article div {
+    #electricity article div {
         position: absolute;  
     }
     
-    main .electricity {
+    #electricity main {
         margin-top: 72px;
     }
 
-    form { 
+    #messegeForm form { 
         width:500px;
         height:440px;
         background:#e6e6e6;
@@ -206,7 +198,7 @@ img {
         text-align: center;
     }
 
-    h2 {
+    #messegeForm h2 {
         margin:0 auto;
         padding-bottom:10px;
         width:180px;
@@ -215,32 +207,23 @@ img {
         text-align: center;
     }
 
-    input, textarea, select {
+    #messegeForm input, textarea, select {
         width:100%;
         padding:10px;
         box-sizing:border-box;
         background:none;
-        outline:none;
         border:0;
         font-family: 'Varela Round', sans-serif;
-        transition:all .3s;
         border-bottom:2px solid #bebed2;
         text-align: right;
+        color:#5a5a6e;
     }
 
-    input:focus {
+    #messegeForm input:focus {
         border-bottom:2px solid #78788c;
     }
 
-    p:before {
-        content:attr(type);
-        display:block;
-        margin:28px 0 0;
-        font-size:14px;
-        color:#5a5a5a;
-    }
-
-    button {
+    #messegeForm button {
         padding:8px 12px;
         margin: 30px auto;
         font-family: 'Varela Round', sans-serif;
@@ -251,10 +234,41 @@ img {
         transition:all .3s;
     }
 
-    button:hover {
-        background:#78788c;color:#ffffff;
+    #messegeForm button:hover {
+        background:#78788c;
+        color:#ffffff;
     }
-    
+
+    #accounting main img {
+        width: 300px;
+        height: 400px;
+        top: 30px;
+        right: 300px;
+    }
+
+    #accounting .buttons {
+        width: 1000px;
+        height: 200px;
+        position: relative;
+        /* right: 310px; */
+        top:400px;
+    }
+
+    #accounting .buttons div {
+        width: 150px;
+        height: 50px;
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        background:#ebebeb;
+        text-align: center;
+        color: #555555;
+        margin: 50px 20px;
+        padding-top: 30px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 18px;
+        float: right;
+    }
+       
 }
 
 
@@ -277,7 +291,6 @@ img {
     nav {
         width: 92%;
         height: 80px;
-        left: 25px;
         position: relative;
     }
 
@@ -293,17 +306,7 @@ img {
         border-bottom-width: thick;
     }
 
-    h5 {
-        color: #555555;
-        margin-top: 20px; 
-        font-size: 15px;
-    }
-
-     h5.long {
-         margin-top:12px;
-     }
-
-     .messeges article {
+    #homePage article {
         border: 2px solid #cccccc;
         border-radius: 8px;
         min-height: 90px;
@@ -315,17 +318,17 @@ img {
         color: #555555;
     }
 
-    .messeges article section {
+    #homePages article section {
         margin-top: 30px;
         font-family: 'Varela Round', sans-serif;
         font-size: 20px;
     }
 
-    .messeges article section.longmes {
+    #homePage article section.longmes {
         margin-top: 18px;
     }
 
-    .messeges article div {
+    #homePage article div {
         position: absolute;  
     }    
 
@@ -334,13 +337,13 @@ img {
     }
 
 
-    .bill{
+    #bills .bill{
         width: 720px;
         height: auto;
         margin: 0 auto;
     }
     
-    .bill article{
+    #bills .bill article{
         background: #ebebeb;
         width: 84px;
         height: 79px;
@@ -357,12 +360,12 @@ img {
         padding-top: 5px;
     }
 
-     .bill section{
+    #bills .bill section{
         font-size:16px;
         position: relative; 
     }
 
-    .electricity article {
+    #electricity article {
         border: 2px solid #cccccc;
         border-radius: 8px;
         min-height: 60px;
@@ -374,18 +377,18 @@ img {
         color: #555555;
     }
     
-    .electricity article section {
+    #electricity article section {
         margin-top: 10px;
         font-family: 'Varela Round', sans-serif;
         font-size: 18px;
     }
     
-    .electricity article div {
+    #electricity article div {
         position: absolute;  
     }
 
     
-    form { 
+    #messegeForm form { 
         width:500px;
         height:440px;
         background:#e6e6e6;
@@ -400,7 +403,7 @@ img {
         text-align: center;
     }
 
-    h2 {
+    #messegeForm h2 {
         margin:0 auto;
         padding-bottom:10px;
         width:180px;
@@ -409,7 +412,7 @@ img {
         text-align: center;
     }
 
-    input, textarea, select {
+    #messegeForm input, textarea, select {
         width:100%;
         padding:10px;
         box-sizing:border-box;
@@ -420,21 +423,14 @@ img {
         transition:all .3s;
         border-bottom:2px solid #bebed2;
         text-align: right;
+        color:#5a5a6e;
     }
 
-    input:focus {
+    #messegeForm input:focus {
         border-bottom:2px solid #78788c;
     }
 
-    p:before {
-        content:attr(type);
-        display:block;
-        margin:28px 0 0;
-        font-size:14px;
-        color:#5a5a5a;
-    }
-
-    button {
+    #messegeForm button {
         float:right;
         padding:8px 12px;
         margin: 8px auto;
@@ -446,7 +442,7 @@ img {
         transition:all .3s;
     }
 
-    button:hover {
+    #messegeForm button:hover {
         background:#78788c;
         color:#ffffff;
     }

@@ -10,6 +10,7 @@
     </head>
     <body>
         <div id="wrapper">
+        <div id="messegeForm">
             <header>
                 <a id="logo" href="#"></a>
                 <img src="images/rami.jpg">
@@ -18,19 +19,18 @@
             </header>
             <nav>
                 <ul>
-                    <li class="selected"><a  href="index.html"><h5> דף הבית <i class="fa fa-home"></i></h5></a></li>
-                    <li><a href="#"><h5> הגדרות משתמש <i class="fa fa-cog"></i></h5></a></li>
-                    <li><a href="#"><h5 class="long">התחשבנות <i class="fa fa-bar-chart"></i><br> בין שותפים &nbsp; &nbsp; &nbsp; </h5></a></li>
-                    <li><a href="bills.html"><h5>תשלום חשבונות <i class="fa fa-credit-card"></i></h5></a></li>
-                    <li><a href="#"><h5>ניהול קבוצות <i class="fa fa-user-plus"></i></h5></a></li>
-                    <section></section>
+                    <li><a  href="index.html">דף הבית <i class="fa fa-home"></i></a></li>
+                    <li><a href="#"> הגדרות משתמש <i class="fa fa-cog"></i></a></li>
+                    <li><a href="accounting.html"> התחשבנות בין שותפים<i class="fa fa-bar-chart"></i></i></a></li>
+                    <li class="selected"><a href="bills.html">תשלום חשבונות <i class="fa fa-credit-card"></i></a></li>
+                    <li><a href="#">ניהול קבוצות <i class="fa fa-user-plus"></i></a></li>
                     <div class="clear"></div>                    
                 </ul>
             </nav>
             <main>
                 <form  action="" method="get">
                     <h2>השארת הודעה</h2>
-                        <input required title="you forgot to fill it" type="text" name="names" placeholder="עבור מי ההודעה?">
+                        <input required title="you forgot to fill it" type="text" name="names" placeholder="?עבור מי ההודעה">
                         <textarea id="message" type="text" name="messege" placeholder="תוכן ההודעה"></textarea>
                         <input type="number" name="amount" placeholder="סכום ששולם">
                         <input type="date" name="date" placeholder="תאריך ביצוע התשלום">
@@ -44,5 +44,7 @@
                         <button>Send Message</button>  
                 </form>
             </main>
+        </div>
+        </div>
     </body>
 </html>
