@@ -9,22 +9,34 @@
 a, a:visited, label {
     color:#555555;
     font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
 }
 
-#bills .bill i {
+h5 {
+    font-family: 'Varela Round', sans-serif;
+    color: #555555;
+    left: 10px;
+    position: relative;
+    margin: 5px auto;
+}
+
+h1 {
+    font-family: 'Varela Round', sans-serif;
+    color: #555555;
+    position: relative;
+    text-align: center;
+}
+
+.bill i {
     font-size: 25px;
 }
 
 a:hover {
-    color: #2b879e;
+    color: #a1a1a1;
 }
 
 header, nav, aside, article, section, footer, main {
     display: block;
-}
-
-.clear {
-    clear: both;
 }
 
 li {
@@ -61,7 +73,7 @@ img {
     position: relative;
     float: right;
     right: 70px;
-    top: 45px;
+    top: 30px;
 }
 
 
@@ -73,6 +85,10 @@ img {
 
 @media (min-width: 850px) {
         
+    .sideNav {
+        display: none;
+    }
+    
     #wrapper {
         margin: 0 auto;
         max-width: 1000px;
@@ -83,10 +99,18 @@ img {
         height: 104px;
     }
 
+    #logo i.fa {
+        display: none;
+    }
+
     nav {
         width: 92%;
         height: 90px;
         position: relative;
+    }
+
+    header a #hamburger {
+        display: none;
     }
 
     li {
@@ -99,43 +123,19 @@ img {
         font-size: 38px;
         float: right;
         border-bottom-width: thick;        
-    }
+    }   
 
-    #homePage article {
-        border: 2px solid #cccccc;
-        border-radius: 8px;
-        min-height: 90px;
-        text-align: center;
-        margin: 50px 335px;
-        background: #ebebeb;
-        color: #555555;
-    }
-
-    #homePage article section {
-        margin-top: 30px;
-        font-family: 'Varela Round', sans-serif;
-        font-size: 18px;
-    }
-
-    #homePage article section.longmes {
-        margin-top: 18px;
-    }
-
-    #homePage article div {
-        position: absolute;  
-    }    
-
-    #homePage main {
+    main {
         margin-top: 72px;
     }
 
-    #bills .bill{
+    .bill{
         width: 720px;
         height: auto;
         margin: 0 auto;
     }
     
-    #bills .bill article{
+    .bill article{
         background: #ebebeb;
         width: 84px;
         height: 79px;
@@ -144,20 +144,51 @@ img {
         border: 2px solid #6b6b6b;
         text-align: center;
         position: relative;
-        color: #6b6b6b;
+        color: #555555;
         float:left;
         margin-bottom:60px;
         font-family: 'Varela Round', sans-serif;
         font-size:36px;
-        padding-top: 5px;
+        /* padding-top: 5px; */
     }
 
-    #bills .bill section{
+    .bill section{
         font-size:16px;
         position: relative; 
     }
+    
+    .messeges article, .groupManage article, .logIn article {
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        min-height: 90px;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        margin: 50px 335px;
+        background: #ebebeb;
+        color: #555555;
+    }
 
-    #electricity article {
+
+    .messeges article section, .groupManage article section, .logIn article section {
+        margin-top: 30px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 18px;
+    }
+
+    .messeges article section.longmes {
+        margin-top: 18px;
+    }
+
+    .messeges article div, .groupManage article div {
+        position: absolute;  
+    }    
+
+    main .messeges {
+        margin-top: 72px;
+    }
+
+    .electricity article {
         border: 2px solid #cccccc;
         border-radius: 8px;
         min-height: 60px;
@@ -169,28 +200,28 @@ img {
         color: #555555;
     }
     
-    #electricity article section {
+    .electricity article section {
         margin-top: 15px;
         font-family: 'Varela Round', sans-serif;
         font-size: 18px;
     }
     
-    #electricity article div {
+    .electricity article div {
         position: absolute;  
     }
     
-    #electricity main {
+    main .electricity {
         margin-top: 72px;
     }
 
-    #messegeForm form { 
+    form { 
         width:500px;
         height:440px;
         background:#e6e6e6;
         border-radius:8px;
         box-shadow:0 0 40px -10px #000;
-        margin:calc(50vh - 220px) auto;
-        padding:20px 30px;
+        margin: 80px auto;
+        padding:10px 30px;
         max-width:calc(100vw - 40px);
         box-sizing:border-box;
         font-family: 'Varela Round', sans-serif;
@@ -198,16 +229,16 @@ img {
         text-align: center;
     }
 
-    #messegeForm h2 {
+    h2 {
         margin:0 auto;
         padding-bottom:10px;
         width:180px;
-        color:#78788c;
+        color:#555555;
         border-bottom:3px solid #78788c;
         text-align: center;
     }
 
-    #messegeForm input, textarea, select {
+    input, textarea, select {
         width:100%;
         padding:10px;
         box-sizing:border-box;
@@ -216,45 +247,38 @@ img {
         font-family: 'Varela Round', sans-serif;
         border-bottom:2px solid #bebed2;
         text-align: right;
-        color:#5a5a6e;
+        color:#555555;
+        border-radius: 8px;
     }
 
-    #messegeForm input:focus {
+    input:focus {
         border-bottom:2px solid #78788c;
     }
 
-    #messegeForm button {
+    button {
         padding:8px 12px;
         margin: 30px auto;
         font-family: 'Varela Round', sans-serif;
         border:2px solid #78788c;
         background:0;
-        color:#5a5a6e;
+        color:#555555;
         cursor:pointer;
         transition:all .3s;
     }
 
-    #messegeForm button:hover {
-        background:#78788c;
-        color:#ffffff;
+    button:hover {
+        background:#a1a1a1;
+        color:#a1a1a1;
     }
 
-    #accounting main img {
-        width: 300px;
-        height: 400px;
-        top: 30px;
-        right: 300px;
-    }
-
-    #accounting .buttons {
+    .buttons {
         width: 1000px;
         height: 200px;
         position: relative;
-        /* right: 310px; */
         top:400px;
     }
 
-    #accounting .buttons div {
+    .buttons div {
         width: 150px;
         height: 50px;
         border: 2px solid #cccccc;
@@ -268,14 +292,214 @@ img {
         font-size: 18px;
         float: right;
     }
-       
+
+    /* Include the padding and border in an element's total width and height */
+    #myDiv  * {
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+      
+      /* Remove margins and padding from the list */
+    #myUL ul {
+        margin: 20px;
+        padding: 0;
+    }
+      
+     
+      /* Style the list items */
+    #myUL ul li {
+        cursor: pointer;
+        position: relative;
+        padding: 0px 8px 12px 40px;
+        list-style-type: none;
+        background: #eee;
+        font-size: 18px;
+        transition: 0.2s;
+    }
+      
+      /* Set all odd list items to a different color (zebra-stripes) */
+    #myInput ul li:nth-child(odd) {
+        background: #f9f9f9;
+    }
+      
+      /* Darker background-color on hover */
+    #myUL ul li:hover {
+        background: #a1a1a1;
+    }
+      
+      /* When clicked on, add a background color and strike out text */
+    #myUL ul li.checked {
+        background: #888;
+        color: #555555;
+        text-decoration: line-through;
+    }
+      
+      /* Add a "checked" mark when clicked on */
+    #myUL ul li.checked::before {
+        content: '';
+        position: absolute;
+        border-color: #fff;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+    }
+      
+      /* Style the close button */
+    #myUL .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 16px 12px 16px;
+    }
+      
+    #myUL.close:hover {
+        background-color:#c3e2f8;
+        color: white;
+    }
+      
+      /* Style the header */
+    #myDiv.header {
+        background-color: #c3e2f8;
+        color: 555555;
+        text-align: right;
+        padding: 20px;
+        border-radius: 8px;
+    }
+      
+      /* Clear floats after the header */
+    #myDiv.header:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+      
+      /* Style the input */
+    #myInput input {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        width: 75%;
+        padding: 10px;
+        float: left;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+      
+      /* Style the "Add" button */
+    #myDiv .addBtn {
+        padding: 10px;
+        width: 25%;
+        background: #d9d9d9;
+        color: #555555;
+        float: left;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 8px;
+    }
+      
+    #myDiv .addBtn:hover {
+        background-color: #bbb;
+    }
+
+    .container {
+        width:70%;
+        background-color: #ddd;
+        position: relative;
+      }
+      
+      .payment article {
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        min-height: 90px;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        margin: 25px 260px;
+        background: #ebebeb;
+        color: #555555;
+    }
+
+    article section {
+        margin-top: 15x;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .Daniel {width: 80%; background-color: #4CAF50;}
+    .Yossi {width: 90%; background-color: #2196F3;}
+    .Asaf {width: 65%; background-color: #f44336;}
+
+    #pay article section{
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        min-height: 60px;
+        text-align: center;
+        margin: 50px 260px;
+        padding: 4px;
+        background: #ebebeb;
+        color: #555555;
+        margin-top: 15px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 18px;
+      }
+
+      section{
+        margin-top: 15px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 18px   
+      }
+
+      .danielPhoto {
+          height: 50px; 
+          width: 50px;
+          float:left;
+          bottom :2px;
+          position: relative;
+          left: 150px;
+      }
+      .yossiPhoto {
+          height: 50px;
+          width: 50px;
+          float: right;
+          right: 150px;
+          position: relative;
+      }
+
+      #pay h6 {
+          right: 25px;
+          top: 40px;
+          position: relative;
+      }
+
+      .bank{
+        height: 100px; 
+        width: 100px;
+        bottom :0px;
+        position: relative;
+        margin: 3px 3px;
+        right:333px;
+    }
+
+    #pay article .toDo section {
+        top: 150px;
+        position: relative;
+    }
+      
 }
+
 
 
 /*//////////////////////
 //////  TABLET  ////////
 /////////////////////*/
-
+/* 
 @media (max-width: 850px) and (min-width: 481px) {
 
     #wrapper {
@@ -306,7 +530,65 @@ img {
         border-bottom-width: thick;
     }
 
-    #homePage article {
+    article {
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        min-height: 90px;
+        font-size: 22px;
+        text-align: center;
+        position: relative;
+        margin: 50px 335px;
+        background: #ebebeb;
+        color: #555555;
+    }
+
+    article section {
+        margin-top: 30px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 20px;
+    }
+
+    article section.longmes {
+        margin-top: 18px;
+    }
+
+    article div {
+        position: absolute;  
+    }    
+
+    main .electricity {
+        margin-top: 72px;
+    }
+
+
+    .bill{
+        width: 720px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .bill article{
+        background: #ebebeb;
+        width: 84px;
+        height: 79px;
+        border-radius:8px;
+        margin:40px 75.5px;
+        border: 2px solid #6b6b6b;
+        text-align: center;
+        position: relative;
+        color: #555555;
+        font-size:36px;
+        float:left ;
+        margin-bottom: 2px;
+        font-family: 'Varela Round', sans-serif;
+        padding-top: 5px;
+    }
+
+    .bill section{
+        font-size:16px;
+        position: relative; 
+    }
+    .messeges article, .payment article {
         border: 2px solid #cccccc;
         border-radius: 8px;
         min-height: 90px;
@@ -318,54 +600,22 @@ img {
         color: #555555;
     }
 
-    #homePages article section {
+    
+    .messeges article section {
         margin-top: 30px;
         font-family: 'Varela Round', sans-serif;
         font-size: 20px;
     }
 
-    #homePage article section.longmes {
+    .messeges article section.longmes {
         margin-top: 18px;
     }
 
-    #homePage article div {
+    .messeges article div {
         position: absolute;  
-    }    
+    } 
 
-    main .electricity {
-        margin-top: 72px;
-    }
-
-
-    #bills .bill{
-        width: 720px;
-        height: auto;
-        margin: 0 auto;
-    }
-    
-    #bills .bill article{
-        background: #ebebeb;
-        width: 84px;
-        height: 79px;
-        border-radius:8px;
-        margin:40px 75.5px;
-        border: 2px solid #6b6b6b;
-        text-align: center;
-        position: relative;
-        color: #6b6b6b;
-        font-size:36px;
-        float:left ;
-        margin-bottom: 2px;
-        font-family: 'Varela Round', sans-serif;
-        padding-top: 5px;
-    }
-
-    #bills .bill section{
-        font-size:16px;
-        position: relative; 
-    }
-
-    #electricity article {
+    .electricity article, # {
         border: 2px solid #cccccc;
         border-radius: 8px;
         min-height: 60px;
@@ -377,25 +627,24 @@ img {
         color: #555555;
     }
     
-    #electricity article section {
+    .electricity article section {
         margin-top: 10px;
         font-family: 'Varela Round', sans-serif;
         font-size: 18px;
     }
     
-    #electricity article div {
+    .electricity article div {
         position: absolute;  
     }
 
-    
-    #messegeForm form { 
+    form { 
         width:500px;
         height:440px;
         background:#e6e6e6;
         border-radius:8px;
         box-shadow:0 0 40px -10px #000;
         margin:calc(50vh - 220px) auto;
-        padding:20px 30px;
+        padding:10px 30px;
         max-width:calc(100vw - 40px);
         box-sizing:border-box;
         font-family: 'Varela Round', sans-serif;
@@ -403,16 +652,16 @@ img {
         text-align: center;
     }
 
-    #messegeForm h2 {
+    h2 {
         margin:0 auto;
         padding-bottom:10px;
         width:180px;
-        color:#78788c;
+        color:#555555;
         border-bottom:3px solid #78788c;
         text-align: center;
     }
 
-    #messegeForm input, textarea, select {
+    input, textarea, select {
         width:100%;
         padding:10px;
         box-sizing:border-box;
@@ -423,44 +672,43 @@ img {
         transition:all .3s;
         border-bottom:2px solid #bebed2;
         text-align: right;
-        color:#5a5a6e;
+        color:#555555;
     }
 
-    #messegeForm input:focus {
+    input:focus {
         border-bottom:2px solid #78788c;
     }
 
-    #messegeForm button {
+    button {
         float:right;
         padding:8px 12px;
         margin: 8px auto;
         font-family: 'Varela Round', sans-serif;
         border:2px solid #78788c;
         background:0;
-        color:#5a5a6e;
+        color:#555555;
         cursor:pointer;
         transition:all .3s;
     }
 
-    #messegeForm button:hover {
+    button:hover {
         background:#78788c;
-        color:#ffffff;
+        color:#a1a1a1;
     }
-    #accounting main img {
+    main img {
         width: 300px;
         height: 400px;
         margin: 30px 150px;
-      /
     }
 
-    #accounting .buttons {
+    .buttons {
         width: 1000px;
         height: 200px;
         position: relative;
         top:400px;
     }
 
-    #accounting .buttons div {
+    .buttons div {
         width: 150px;
         height: 50px;
         border: 2px solid #cccccc;
@@ -473,5 +721,506 @@ img {
         font-family: 'Varela Round', sans-serif;
         font-size: 18px;
         float: right;
+    }
+
+    header a #hamburger {
+        display: none;
+    }
+
+    body #mySideNav {
+        display: none;
+    }
+    
+      .payment article {
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        min-height: 90px;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        margin: 25px 260px;
+        background: #ebebeb;
+        color: #555555;
+    }
+
+    article section {
+        margin-top: 15x;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    
+      .payment article {
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        min-height: 90px;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        margin: 25px 260px;
+        background: #ebebeb;
+        color: #555555;
+    }
+
+    article section {
+        margin-top: 15x;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+} */
+
+/*//////////////////////
+//////  MOBILE  ////////
+/////////////////////*/
+
+@media (max-width: 481px) {
+   
+   header {
+        height: 60px;
+        width: auto;
+        border-bottom: 2px solid #cccccc;
+    }
+
+    #logo {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: block;
+        background-image: url(../images/logo2.png);
+        background-repeat: no-repeat;
+        position: relative;
+        top: 22px;
+        left: 14px;
+    }
+
+    nav, img, #userName  {
+        display: none;
+    }
+
+    header i.fa {
+        float: right;
+        position: relative;
+        font-size: 20px;
+        right: 30px;
+        margin: 0px 6px;
+        bottom: 32px;
+    }
+
+    header a img#hamburger {
+        height: 20px;
+        width: 20px;
+        display: block;
+        position: relative;
+        left: -20px;
+    }
+
+    main {
+        margin-top: 72px;
+    }
+
+    .messeges article, #paymentGrafh article section, .groupManage article {
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        min-height: 80px;
+        width: 325px;
+        position: relative;
+        text-align: center;
+        margin: 20px auto;
+        background: #ebebeb;
+        color: #555555;
+    }
+
+    .messeges article section, .groupManage article section {
+        margin-top: 30px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 18px;
+    }
+
+    .messeges article div, article div {
+        position: absolute;
+    }
+    
+
+    .messeges article section.longmes {
+        margin-top: 18px;
+    }  
+    
+    .bill{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .bill article{
+        background: #ebebeb;
+        width: 84px;
+        height: 79px;
+        border-radius:8px;
+        margin:30px 25px;
+        border: 2px solid #6b6b6b;
+        text-align: center;
+        position: relative;
+        color: #555555;
+        float:left;
+        margin-bottom:60px;
+        font-family: 'Varela Round', sans-serif;
+        font-size:36px;
+    }
+
+    .bill section{
+        font-size:16px;
+        position: relative; 
+    }
+
+    .electricity article {
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        min-height: 60px;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        margin: 25px 60px;
+        background: #ebebeb;
+        color: #555555;
+    }
+    
+    .electricity article section {
+        margin-top: 8px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 18px;
+    }
+    
+    .electricity article div {
+        position: absolute;  
+    }
+
+    form { 
+    
+        margin:calc(30vh - 220px) auto;
+        padding: 0px 30px;
+        max-width:calc(100vw - 40px);
+        box-sizing:border-box;
+        font-family: 'Varela Round', sans-serif;
+        position:relative;
+        text-align: center;
+    }
+
+    h2 {
+        margin:0 auto;
+        padding-bottom:10px;
+        width:180px;
+        color:#555555;
+        border-bottom:3px solid #78788c;
+    }
+
+    input, textarea, select {
+        width:100%;
+        padding:15px;
+        box-sizing:border-box;
+        border:0;
+        font-family: 'Varela Round', sans-serif;
+        border-bottom:2px solid #bebed2;
+        text-align: right;
+        color:#555555;
+    }
+
+    input:focus {
+        border-bottom:2px solid #78788c;
+    }
+
+    button {
+        padding:8px 12px;
+        margin: 30px auto;
+        font-family: 'Varela Round', sans-serif;
+        color:#555555;
+        transition:all .3s;
+    }
+
+    button:hover {
+        background:#78788c;
+        color:#a1a1a1;
+    }
+
+    
+
+    
+    /* ////////////////  sideNav  //////////////// */
+
+    body {
+        font-family: 'Varela Round', sans-serif;
+        transition: background-color .5s;
+    }
+    
+    .sideNav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+    }
+    
+    .sideNav a {
+        padding: 12px 12px 12px 32px;
+        text-decoration: none;
+        color: #555555;
+        display: block;
+        text-align: right;
+        border-bottom: 2px solid #cccccc;
+        }
+    
+    .sideNav a:hover {
+        color: #a1a1a1;
+    }
+    
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+    .sideav {
+        padding-top: 15px;
+    }
+
+    .sideNav a {
+        font-size: 16px;
+    }
+  
+    #mySideNav #next {
+        position: relative;
+        float: left;
+        right: 20px;
+    }
+
+    div a.closebtn {
+        width: 250px;
+        background: #ebebeb;
+        height: 105px;
+        /* border-bottom: 2px solid #cccccc; */
+        color:#111111;
+    }
+
+    /* close hamburger*/
+    div a.closebtn img {
+        height: 20px;
+        width: 20px;
+        display: block;
+        position: relative;
+        float: left;
+        right: 10px;
+        top: 10px;
+    }
+
+    /* daniel*/
+    div a.closebtn section img{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: 70px;
+    }
+
+    div a section h6 {
+        font-family:'Varela Round', sans-serif;
+        color:#555555;
+        font-size: 15px;
+        position: relative;
+        float: left;
+        top: 60px;
+        left: 22px;
+    }
+
+    
+    .payment article {
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        min-height: 90px;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        margin: 25px 260px;
+        background: #ebebeb;
+        color: #555555;
+    }
+
+    article section {
+        margin-top: 15x;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .Daniel {width: 80%; background-color: #4CAF50;}
+    .Yossi {width: 90%; background-color: #2196F3;}
+    .Asaf {width: 65%; background-color: #f44336;}
+    
+    #pay article section{
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        min-height: 90px;
+        text-align: center;
+        margin: 200px 120px;
+        background: #ebebeb;
+        color: #555555;
+        margin-top: 15px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 18px
+      }
+
+    section{
+        margin-top: 15px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 18px   
+    }
+
+    .danielPhoto {
+        height: 50px; 
+        width: 50px;
+        float:left;
+        bottom :0px;
+        position: relative;
+        left: 50px;
+    }
+
+    .yossiPhoto {
+        height: 20px;
+        width: 20px;
+        float: right;
+        bottom :5px;
+        right: 50px;
+        position: relative;
+      }
+
+      .bank {
+        height: 100px; 
+        width: 100px;
+        bottom :0px;
+        position: relative;
+        margin: 3px 3px;
+        right:100px;
+    }
+
+    #pay article img {
+        height: 40px;
+        width: 40px;
+        position: relative;
+        margin: 0px auto;
+      }
+
+      /* Include the padding and border in an element's total width and height */
+    #myDiv  * {
+        box-sizing: border-box;
+    }
+      
+      /* Remove margins and padding from the list */
+    #myUL ul {
+        margin: 20px;
+        padding: 0;
+    }
+      
+     
+      /* Style the list items */
+    #myUL ul li {
+        cursor: pointer;
+        position: relative;
+        padding: 0px 8px 12px 40px;
+        list-style-type: none;
+        background: #eee;
+        font-size: 18px;
+        transition: 0.2s;
+        text-align: right;
+        border-radius: 20px;
+        }
+      
+      /* Set all odd list items to a different color (zebra-stripes) */
+    #myInput ul li:nth-child(odd) {
+        background: #f9f9f9;
+    }
+      
+      /* Darker background-color on hover */
+    #myUL ul li:hover {
+        background: #a1a1a1;
+    }
+      
+      /* When clicked on, add a background color and strike out text */
+    #myUL ul li.checked {
+        background: #888;
+        color: #555555;
+        text-decoration: line-through;
+    }
+      
+      /* Add a "checked" mark when clicked on */
+    #myUL ul li.checked::before {
+        content: '';
+        position: absolute;
+        border-color: #fff;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+    }
+      
+      /* Style the close button */
+    #myUL .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 16px 12px 16px;
+    }
+      
+    #myUL.close:hover {
+        background-color:#c3e2f8;
+        color: white;
+    }
+      
+      /* Style the header */
+    #myDiv.header {
+        background-color: #c3e2f8;
+        color: 555555;
+        text-align: right;
+        padding: 20px;
+        border-radius: 8px;
+    }
+      
+      /* Clear floats after the header */
+    #myDiv.header:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+      
+      /* Style the input */
+    #myInput input {
+        margin: 0;
+        border: none;
+        border-radius: 8px;
+        width: 75%;
+        padding: 10px;
+        float: left;
+        font-size: 16px;
+    }
+      
+      /* Style the "Add" button */
+    #myDiv .addBtn {
+        padding: 10px;
+        width: 25%;
+        background: #d9d9d9;
+        color: #555555;
+        float: left;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 8px
+    }
+      
+    #myDiv .addBtn:hover {
+        background-color: #bbb;
     }
 }

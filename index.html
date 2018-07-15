@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <title>Final Project- Natalie Mahmalie & Chen Yafe</title>
         <script src="includes/jquery-3.2.1.min.js"></script>
         <script src="includes/main.js"></script>
@@ -10,9 +12,12 @@
     </head>
     <body>
         <div id="wrapper">
-        <div id="homePage">
             <header>
-                <a id="logo" href="#"></a>
+                <a id="logo" href="#">
+                    <div id="main"><span style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="hamburger" src="images/hamburger.svg"></span></div>
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-bell"></i>
+                </a>
                 <img src="images/rami.jpg">
                 <section id="userName">rami</section>
             </header>
@@ -20,18 +25,32 @@
                 <ul>
                     <li class="selected"><a  href="#">דף הבית <i class="fa fa-home"></i></a></li>
                     <li><a href="#"> הגדרות משתמש <i class="fa fa-cog"></i></a></li>
-                    <li><a href="accounting.html"> התחשבנות בין שותפים<i class="fa fa-bar-chart"></i></i></a></li>
+                    <li><a href="paymantGrafh.html"> התחשבנות בין שותפים<i class="fa fa-bar-chart"></i></i></a></li>
                     <li><a href="bills.html">תשלום חשבונות <i class="fa fa-credit-card"></i></a></li>
-                    <li><a href="#">ניהול קבוצות <i class="fa fa-user-plus"></i></a></li>
+                    <li><a href="groupManagement.html">ניהול קבוצות <i class="fa fa-user-plus"></i></a></li>
                 </ul>
             </nav>
+            <div id="mySideNav" class="sideNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;<img id="hamburger" src="images/hamburger.svg">
+                    <section>
+                        <img src="images/daniel.png">
+                        <h6>daniel<h6>
+                    </section>
+                </a>
+                <a href="#"><i id="next" class="fa fa-angle-left"></i>דף הבית &nbsp; <i class="fa fa-home"></i></a>
+                <a href="#"><i id="next" class="fa fa-angle-left"></i> הגדרות משתמש &nbsp; <i class="fa fa-cog"></i></a>
+                <a href="paymantGrafh.html"><i id="next" class="fa fa-angle-left"></i>התחשבנות בין שותפים &nbsp; <i class="fa fa-bar-chart"></i></a>
+                <a href="bills.html"><i id="next" class="fa fa-angle-left"></i>תשלום חשבונות &nbsp; <i class="fa fa-credit-card"></i></a>
+                <a href="groupManagement.html"><i id="next" class="fa fa-angle-left"></i>ניהול קבוצות &nbsp; <i class="fa fa-user-plus"></i></a>
+            </div>
             <main>
+                <section class="messeges">
                 <article><div><i id="close0" class="fa fa-times"></i></div><section>יצר את הדירה Rami <i class="fa fa-home"></i></section></article>
                 <article><div><i id="close1" class="fa fa-times"></i></div><a href="#"><section>הזמן את שותפיך לדירה ,Rami <i class="fa fa-user-plus"></i></section></a></article>
                 <article><div><i id="close2" class="fa fa-times"></i></div><a href="#"><section class="longmes"></i> "הודעה חדשה 1 בקבוצת "יחידת דיור <br> 'למעבר לקבוצה לחץ על 'ניהול קבוצות </section></a></article>
                 <article><div><i id="close3" class="fa fa-times"></i></div><a href="messegeForm.html"><section>השאר הודעה לשותפיך, Rami <i class="fa fa-envelope-open"></i></section></a></article>
+                </section>
             </main>
-        </div>
         </div>
     </body>
 </html>

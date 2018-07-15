@@ -10,9 +10,12 @@
     </head>
     <body>
         <div id="wrapper">
-        <div id="electricity">
             <header>
-                <a id="logo" href="#"></a>
+                <a id="logo" href="index.html">
+                    <div id="main"><span style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="hamburger" src="images/hamburger.svg"></span></div>
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-bell"></i>
+                </a>
                 <img src="images/rami.jpg">
                 <section id="userName">rami</section>
             </header>
@@ -20,18 +23,32 @@
                 <ul>
                     <li><a  href="index.html">דף הבית <i class="fa fa-home"></i></a></li>
                     <li><a href="#"> הגדרות משתמש <i class="fa fa-cog"></i></a></li>
-                    <li><a href="accounting.html"> התחשבנות בין שותפים<i class="fa fa-bar-chart"></i></i></a></li>
+                    <li><a href="groupManagement"> התחשבנות בין שותפים<i class="fa fa-bar-chart"></i></i></a></li>
                     <li class="selected"><a href="bills.html">תשלום חשבונות <i class="fa fa-credit-card"></i></a></li>
-                    <li><a href="#">ניהול קבוצות <i class="fa fa-user-plus"></i></a></li>
+                    <li><a href="groupManagement.html">ניהול קבוצות <i class="fa fa-user-plus"></i></a></li>
                 </ul>
             </nav>
+                    <div id="mySideNav" class="sideNav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;<img id="hamburger" src="images/hamburger.svg">
+                            <section>
+                                <img src="images/daniel.png">
+                                <h6>daniel<h6>
+                            </section>
+                        </a>
+                        <a href="index.html"><i id="next" class="fa fa-angle-left"></i>דף הבית &nbsp; <i class="fa fa-home"></i></a>
+                        <a href="#"><i id="next" class="fa fa-angle-left"></i> הגדרות משתמש &nbsp; <i class="fa fa-cog"></i></a>
+                        <a href="groupManagement"><i id="next" class="fa fa-angle-left"></i>התחשבנות בין שותפים &nbsp; <i class="fa fa-bar-chart"></i></a>
+                        <a href="bills.html"><i id="next" class="fa fa-angle-left"></i>תשלום חשבונות &nbsp; <i class="fa fa-credit-card"></i></a>
+                        <a href="groupManagement.html"><i id="next" class="fa fa-angle-left"></i>ניהול קבוצות &nbsp; <i class="fa fa-user-plus"></i></a>
+                    </div>
             <main>
+                <section class="electricity">   
                     <article><div><i id="close0" class="fa fa-times"></i></div><a href="#"><section>קבלה מאת חברת החשמל עבור התאריכים 22.1-22.3 <i class="fa fa-check-square" ></i></section></a></article>
                     <article><div><i id="close1" class="fa fa-times"></i></div><a href="#"><section>קבלה מאת חברת החשמל עבור התאריכים 22.3-22.5 <i class="fa fa-check-square" ></i></section></a></article>
                     <article><div><i id="close2" class="fa fa-times"></i></div><a href="#"><section>קבלה מאת חברת החשמל עבור התאריכים 22.5-22.7 <i class="fa fa-check-square" ></i></section></a></article>
                     <article><div><i id="close3" class="fa fa-times"></i></div><a target="frame_name" href="https://www.iec.co.il/pages/billspayment.aspx"><section>חשבון החשמל לא שולם עבור התאריכים 22.7-22.9 <i class="fa fa-envelope"></i></section></a></article>                
+                </section> 
             </main>
-        </div>
         </div>
     </body>
 </html>

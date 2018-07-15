@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Final Project- Natalie Mahmalie & Chen Yafe</title>
+        <script src="includes/jquery-3.2.1.min.js"></script>
+        <script src="includes/main.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="includes/style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+                <header>
+                        <a id="logo" href="index.html">
+                            <div id="main"><span style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="hamburger" src="images/hamburger.svg"></span></div>
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-bell"></i>
+                        </a>
+                        <img src="images/rami.jpg">
+                        <section id="userName">rami</section>
+                    </header>
+                    <nav>
+                        <ul>
+                            <li><a  href="index.html">דף הבית <i class="fa fa-home"></i></a></li>
+                            <li><a href="#"> הגדרות משתמש <i class="fa fa-cog"></i></a></li>
+                            <li><a href="paymantGrafh.html"> התחשבנות בין שותפים<i class="fa fa-bar-chart"></i></i></a></li>
+                            <li><a href="bills.html">תשלום חשבונות <i class="fa fa-credit-card"></i></a></li>
+                            <li class="selected"><a href="groupManagement.html">ניהול קבוצות <i class="fa fa-user-plus"></i></a></li>
+                        </ul>
+                    </nav>
+                    <div id="mySideNav" class="sideNav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;<img id="hamburger" src="images/hamburger.svg">
+                            <section>
+                                <img src="images/daniel.png">
+                                <h6>daniel<h6>
+                            </section>
+                        </a>
+                        <a href="index.html"><i id="next" class="fa fa-angle-left"></i>דף הבית &nbsp; <i class="fa fa-home"></i></a>
+                        <a href="#"><i id="next" class="fa fa-angle-left"></i> הגדרות משתמש &nbsp; <i class="fa fa-cog"></i></a>
+                        <a href="paymantGrafh.html"><i id="next" class="fa fa-angle-left"></i>התחשבנות בין שותפים &nbsp; <i class="fa fa-bar-chart"></i></a>
+                        <a href="bills.html"><i id="next" class="fa fa-angle-left"></i>תשלום חשבונות &nbsp; <i class="fa fa-credit-card"></i></a>
+                        <a href="groupManagement.html"><i id="next" class="fa fa-angle-left"></i>ניהול קבוצות &nbsp; <i class="fa fa-user-plus"></i></a>
+                    </div>
+            <main>
+                <section class="groupManage">
+                    <article><div><i id="close0" class="fa fa-times"></i></div><section><a href="groupManage.html">אנג'י וקסמן</a><i class="fa fa-home"></i></section></article>
+                    <article><div><i id="close0" class="fa fa-times"></i></div><section><a href="groupManage.html">יוסי שאול</a><i class="fa fa-home"></i></section></article>
+                    <article><div><i id="close0" class="fa fa-times"></i></div><button type="button" data-toggle="modal" data-target="#myModal">עזיבת הדירה<i class="fa fa-home"></i>
+                        </button></article>
+                       
+                         <!-- Modal -->
+                         <div class="modal fade" id="myModal" role="dialog">
+                           <div class="modal-dialog">
+                           
+                             <!-- Modal content-->
+                             <div class="modal-content">
+                               <div class="modal-header">
+                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                 <h4 class="modal-title"></h4>אוי לא..</h4>
+                               </div>
+                               <div>
+                                <p>לחיצה על אישור תסיר אותך מהדירה</p>
+                               </div>
+                               <div>
+                             <button type="button">אישור</button></a>
+                               </div> 
+                           </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
